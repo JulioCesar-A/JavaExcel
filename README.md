@@ -1,18 +1,44 @@
-## Getting Started
+# Introdução
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Esse sistema de gerenciamento de planilhas é um projeto que visa aplicar o que aprendi de Java durante o período de fevereiro a agosto de 2024.
 
-## Folder Structure
+Sua principal função é criar e preencher tabelas no formato csv (comma-separated values, ou valores separados por vírgulas) contando apenas com o uso de classes padrão do Java para manipulação. 
 
-The workspace contains two folders by default, where:
+---
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Guia de Implantação
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+### Pré-requisitos
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Antes de iniciar a implantação, certifique-se de ter os seguintes itens:
 
-## Dependency Management
+- **Ambiente de execução:**
+    
+    - Editor de código de sua preferência (Visual Studio Code recomendado) ou JRE 8 (Java Runtime Environment)
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+    - Software de planilha de sua preferência
+
+- **Conhecimento básico em:**
+
+    - Excel (e na extensão csv)
+    - Java
+
+**Clonar/Baixar o repositório:**
+
+    git clone https://github.com/JulioCesar-A/JavaExcel.git
+---
+
+## Guia de Uso
+
+O sistema é dividido (até o momento) em 3 operações básicas, todas com uma explicação de como funciona e seu passo a passo.
+
+---
+### Criar arquivo
+
+Essa operação irá criar um arquivo csv na pasta sheets com o nome desejado pelo usuário
+
+---
+### Preencher planilha
+
+---
+### Excluir planilha 
