@@ -1,30 +1,43 @@
 import java.util.Scanner;
+import dao.*;
+import auxs.FuncAux;
+import classes.Planilha;
 
 public class Main {
     public static void main(String[] args) {
         Scanner inputUser = new Scanner(System.in);
         
-        String diretorio = System.getProperty("user.dir");
-        String nomeArq, caminho;
-
         
+        String nomeArq;
+
+        Planilha planilha = null;  
+        boolean continuar = true;
         
         int opcao;
-        
-        
-        boolean continuar = true;
+
+        FuncAux.mensagemBemVindo();
+
+        PlanilhaDAO dao = new PlanilhaDAOImpl();
+
         while(continuar) {
 
-            FuncAux.menuIni();
+            FuncAux.menuInicial();
 
 
             opcao = inputUser.nextInt();
-
+            inputUser.nextLine();
 
             switch (opcao) {
                 case 1:
                     System.out.println("Opção Criar arquivo selecionada!");
+                    System.out.println();
 
+                    System.out.println("Informe o nome (sem a extensão) do arquivo a ser criado");
+                    System.out.print("-> ");
+                    nomeArq = inputUser.nextLine().concat(".csv");
+                    planilha = new Planilha(dao.criarPlanilha(nomeArq));
+
+                    FuncAux.mensagemRetorno();
 
                     break;
                 case 2:
@@ -33,14 +46,17 @@ public class Main {
                     
                     break;
                 case 3:
+                    System.out.println("Opção Listar planilha selecionada!");
+
+                    break;
+                case 4:
                     System.out.println("Opção Excluir planilha selecionada!");    
 
-                    
+                    dao.deletarPlanilha(planilha);
                     break;
             
                 case 0:
-                    System.out.println("Terminando a execução...");
-                    continuar = false;
+                    continuar = FuncAux.encerrarPrograma();
                     break;
                 default:
                     System.out.println("Opção inválida, tente novamente");
