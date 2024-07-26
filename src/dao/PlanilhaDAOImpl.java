@@ -9,7 +9,7 @@ public class PlanilhaDAOImpl implements PlanilhaDAO {
     
     public File criarPlanilha (String nomeArq)  {
 
-        File fDiretorio = new File(System.getProperty("user.dir").concat("\\sheets"));
+        File fDiretorio = new File(System.getProperty("user.home").concat("\\sheets"));
 
         
         if (verificarDiretorio(fDiretorio) == true) {
@@ -37,7 +37,16 @@ public class PlanilhaDAOImpl implements PlanilhaDAO {
 
         } else {
 
-            System.out.println("Criando o arquivo " + nomeArq);
+            System.out.println("Criando o arquivo " + nomeArq + "...");
+            try {
+                if (fArquivo.createNewFile()) {
+                    System.out.println("Arquivo criado com sucesso!");
+                } else {
+                    System.out.println("Não foi possível criar o arquivo");
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
 
         }
         return fArquivo;
@@ -73,7 +82,4 @@ public class PlanilhaDAOImpl implements PlanilhaDAO {
             return false;
         }
     }
-    
-    
-
 }
