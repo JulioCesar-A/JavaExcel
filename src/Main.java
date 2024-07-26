@@ -1,7 +1,6 @@
 import java.util.Scanner;
 import dao.*;
-import auxs.FuncAux;
-import classes.Planilha;
+import mainAux.*;
 
 public class Main {
     public static void main(String[] args) {

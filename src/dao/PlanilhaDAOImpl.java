@@ -3,8 +3,7 @@ package dao;
 import java.io.File;
 import java.io.IOException;
 
-import auxs.FuncAux;
-import classes.Planilha;
+import mainAux.*;
 
 public class PlanilhaDAOImpl implements PlanilhaDAO {
     
