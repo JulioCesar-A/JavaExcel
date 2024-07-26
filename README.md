@@ -14,7 +14,7 @@ Antes de iniciar a implantação, certifique-se de ter os seguintes itens:
 
 - **Ambiente de execução:**
     
-    - Editor de código de sua preferência (Visual Studio Code recomendado) ou JRE 8 (Java Runtime Environment)
+    - Editor de código de sua preferência (Visual Studio Code recomendado) ou Prompt de Comando do seu sistema operacional
 
     - Software de planilha de sua preferência
 
@@ -30,7 +30,7 @@ Antes de iniciar a implantação, certifique-se de ter os seguintes itens:
 
 ## Guia de Uso
 
-O sistema é dividido (até o momento) em 3 operações básicas, todas com uma explicação de como funciona e seu passo a passo.
+O sistema é dividido (até o momento) em operações básicas, todas com uma explicação de como funciona e seu passo a passo.
 
 ---
 ### Criar arquivo
