@@ -25,7 +25,14 @@ Antes de iniciar a implantação, certifique-se de ter os seguintes itens:
 
 **Clonar/Baixar o repositório:**
 
+Dependendo do seu uso, você pode tanto **clonar** o repositório em seu ambiente de desenvolvimento:
+
     git clone https://github.com/JulioCesar-A/JavaExcel.git
+    
+ou, fazer o download do repositório para execução via Prompt de Comando usando o botão abaixo:
+
+[![Baixar Programa](https://img.shields.io/badge/Download-blue?style=flat)](https://github.com/JulioCesar-A/JavaExcel/archive/refs/heads/main.zip)
+
 ---
 
 ## Guia de Uso
@@ -34,8 +41,6 @@ O sistema é dividido (até o momento) em operações básicas, todas com uma ex
 
 ---
 ### Criar arquivo
-
-Essa operação irá criar um arquivo csv na pasta sheets com o nome desejado pelo usuário
 
 ---
 ### Preencher planilha
