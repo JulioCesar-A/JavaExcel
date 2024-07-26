@@ -1,4 +1,4 @@
-package classes;
+package mainAux;
 
 import java.io.File;
 import java.util.List;

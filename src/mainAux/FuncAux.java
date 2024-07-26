@@ -1,4 +1,4 @@
-package auxs;
+package mainAux;
 
 public abstract class FuncAux {
     
